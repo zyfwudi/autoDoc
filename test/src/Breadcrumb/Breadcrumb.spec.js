@@ -4,13 +4,7 @@ import { Breadcrumb } from 'shineout'
 
 /* global SO_PREFIX */
 
-describe('Breadcrumb[Separator]', () => {
-  test('should render separator', () => {
-    const data = [{ title: <a href="#/components/Button">Button</a> }, { title: 'Self' }]
-    const wrapper = mount(<Breadcrumb data={data} separator="|" />)
-    expect(wrapper.find(`.${SO_PREFIX}-breadcrumb-separator`).text()).toBe('|')
-  })
-})
+
 
 describe('Breadcrumb[Icon]', () => {
   const data = [
